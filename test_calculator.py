@@ -21,6 +21,6 @@ def test_multiply():
 def test_divide():
     assert divide(10, 2) == 5
     assert divide(-1, 1) == -1
-    assert divide(-1, -1) == 1
+    assert divide(-1, -1) == 2
     with pytest.raises(ValueError, match="Pas possible de diviser par 0"):
         divide(1, 0)
